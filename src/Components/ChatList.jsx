@@ -17,33 +17,7 @@ const styles = theme => ({
   },
 })
 
-const dummyData = [
-  {
-    senderId: "perborgen",
-    text: "who'll win?",
-  },
-  {
-    senderId: "janedoe",
-    text: "I dunno..",
-  },
-];
-
 class ChatList extends React.Component {
-  // constructor(props){
-  //   super(props);
-
-  //   this.state = {
-  //     text: null,
-  //     messages: null,
-  //   };
-  // }
-
-  // updateState(state){
-  //   this.setState(state);
-  //   // 親コンポーネントを更新
-  //   this.props.updateState(state);
-  // }
-
   render() {
     const { classes } = this.props;
     return (
@@ -53,7 +27,8 @@ class ChatList extends React.Component {
             <Paper className={classes.paper}>
               <p>xs=12</p>
               <p>this is ChatList Component</p>
-              <p>{this.props.text}</p>
+              {/* 親から渡ってきた中身が表示 */}
+              <p>{this.props.message}</p>
               <p></p>
             </Paper>
           </Grid>

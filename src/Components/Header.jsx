@@ -51,6 +51,7 @@ class Header extends React.Component{
     return (
       <div className={classes.root}>
         <AppBar position="static">
+          {/* toolbar - manages entire header */}
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
